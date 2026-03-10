@@ -1,0 +1,43 @@
+# --- Identity ---
+name: "systematic-review-pipeline"
+display_name: "Systematic Review Pipeline"
+description: "Systematic literature review following PRISMA methodology — search strategy, screening, extraction, and synthesis"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+# --- Attribution ---
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+
+licence: "MIT"
+repository: "https://github.com/skrpts/systematic-review-pipeline"
+
+# --- Discovery (Hub) ---
+category: "researcher"
+tags:
+  - "systematic-review"
+  - "prisma"
+  - "evidence-synthesis"
+  - "literature-review"
+  - "research"
+
+# --- Security & Access ---
+requires:
+  services:
+    - "anthropic-claude"
+  permissions: []
+  data_handling:
+    - "academic-sources"
+    - "research-data"
+
+# --- Contents ---
+contents:
+  skills: 3
+  prompts: 5
+  workflows: 1
+  services: 1
+  sources: 1
+  documents: 1
+  assets: 2
+  total: 14
