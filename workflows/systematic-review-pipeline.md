@@ -21,7 +21,7 @@ connections:
     type: uses
   - target: evidence-synthesis-writer
     type: uses
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: prisma-guidelines-reference
     type: references
@@ -122,3 +122,48 @@ Invoke the **evidence-synthesis** skill via the **evidence-synthesis-writer** pr
 - If data extraction reveals that included studies report outcomes in incompatible formats, use a narrative synthesis rather than attempting to force quantitative comparison
 - If quality assessment reveals that all included studies have critical risk of bias, state this limitation prominently and qualify all conclusions accordingly
 - If the review protocol was registered, document any deviations from the protocol with justification
+
+## Inputs
+
+| Name | Required | Description | Example |
+|------|----------|-------------|---------|
+| `{{input.draft_research_question}}` | Yes | Draft research question | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.field_of_study}}` | Yes | field of study | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.review_scope}}` | Yes | review scope | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.target_databases}}` | No | target databases | `Paste the latest metrics, exported data, or summary notes relevant to the workflow.` |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| Refined research question | Refined research question with structured components, review objectives, and scope definition |
+| Complete search strategy documentation: search strings for each database, search date, any filters applied, and the rationale for each search decision | Complete search strategy documentation: search strings for each database, search date, any filters applied, and the rationale for each search decision |
+| Final set of included studies, PRISMA flow diagram numbers , and excluded studies | Final set of included studies, PRISMA flow diagram numbers , and excluded studies with reasons |
+| Completed data extraction forms for all included studies, populated data-extraction-template | Completed data extraction forms for all included studies, populated data-extraction-template |
+| Complete evidence synthesis narrative, summary tables, and recommendations for practice/research | Complete evidence synthesis narrative, summary tables, and recommendations for practice/research |
+
+## Setup
+
+Before running this workflow:
+
+1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
+2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
+
+## Provider Notes
+
+- The longer synthesis stages benefit from a model with strong reasoning and a generous context window.
+- Extraction, classification, and formatting steps generally run well on smaller or faster models.
+- Because there are no vendor-specific integrations here, provider choice is mostly a trade-off between speed, quality, and cost.
+
+## Example Input
+
+To test this workflow immediately after import:
+
+```
+Draft Research Question: "Paste the relevant brief, notes, source material, or dataset here."
+Field Of Study: "Paste the relevant brief, notes, source material, or dataset here."
+Review Scope: "Paste the relevant brief, notes, source material, or dataset here."
+Target Databases: "Paste the latest metrics, exported data, or summary notes relevant to the workflow."
+```
+

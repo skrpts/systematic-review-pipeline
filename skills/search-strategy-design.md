@@ -5,7 +5,7 @@ title: Search Strategy Design
 description: "Designs comprehensive, reproducible search strategies for systematic literature reviews"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: prisma-guidelines-reference
     type: references

@@ -5,7 +5,7 @@ title: Study Screening
 description: "Defines screening criteria and supports systematic study selection for literature reviews"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: prisma-guidelines-reference
     type: references

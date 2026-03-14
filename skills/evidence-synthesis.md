@@ -5,7 +5,7 @@ title: Evidence Synthesis
 description: "Synthesises extracted evidence from systematic review into a coherent narrative review"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: prisma-guidelines-reference
     type: references
