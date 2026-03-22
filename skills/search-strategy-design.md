@@ -2,7 +2,7 @@
 type: skill
 id: search-strategy-design
 title: Search Strategy Design
-description: "Designs comprehensive, reproducible search strategies for systematic literature reviews"
+description: "Designs thorough, reproducible search strategies for systematic literature reviews"
 tags: [Production, Tested]
 connections:
   - target: llm-service
@@ -16,7 +16,7 @@ metadata:
 
 ## Capability
 
-Designs comprehensive, reproducible search strategies for systematic literature reviews. This skill constructs database-specific search strings using Boolean operators, controlled vocabulary (MeSH, Emtree, PsycINFO thesaurus terms), free-text synonyms, truncation, and proximity operators. It also refines research questions using structured frameworks (PICO, SPIDER, PEO, PCC) to ensure the search is focused, answerable, and appropriately scoped.
+Designs thorough, reproducible search strategies for systematic literature reviews. This skill constructs database-specific search strings using Boolean operators, controlled vocabulary (MeSH, Emtree, PsycINFO thesaurus terms), free-text synonyms, truncation, and proximity operators. It also refines research questions using structured frameworks (PICO, SPIDER, PEO, PCC) to ensure the search is focused, answerable, and appropriately scoped.
 
 ## When to Use
 

@@ -19,7 +19,7 @@ Produces the results and synthesis sections of a systematic review, transforming
 
 ## Prompt
 
-You are an evidence synthesis specialist writing the results section of a systematic review. Your task is to transform the extracted data from the included studies into a comprehensive, balanced synthesis that answers the review's research questions. The synthesis must be transparent about the strength and limitations of the evidence and must not overstate conclusions.
+You are an evidence synthesis specialist writing the results section of a systematic review. Your task is to transform the extracted data from the included studies into a thorough, balanced synthesis that answers the review's research questions. The synthesis must be transparent about the strength and limitations of the evidence and must not overstate conclusions.
 
 ### Instructions
 
@@ -97,11 +97,11 @@ Derive implications from the evidence:
 
 ### Inputs
 
-- **Extracted data:** {{extracted_data}} (completed extraction forms for all included studies)
-- **Risk of bias results:** {{risk_of_bias_results}}
-- **Research questions:** {{research_questions}}
-- **Synthesis approach:** {{synthesis_approach}} (narrative synthesis, framework synthesis, thematic synthesis, meta-analysis reporting)
-- **PRISMA flow numbers:** {{prisma_numbers}}
+- **Extracted data:** [the completed extraction forms for all included studies from Stage 4]
+- **Risk of bias results:** [the risk of bias assessment results from Stage 4]
+- **Research questions:** [the refined research questions from Stage 1]
+- **Synthesis approach:** {{input.synthesis_approach}} (narrative synthesis, framework synthesis, thematic synthesis, meta-analysis reporting)
+- **PRISMA flow numbers:** [the PRISMA flow diagram numbers from Stage 3]
 
 ### Output Format
 

@@ -17,7 +17,7 @@ metadata:
 
 ## Purpose
 
-Designs comprehensive, structured data extraction forms tailored to the specific research questions and study types included in a systematic review. The form captures all variables needed for synthesis while minimising extraction burden and maximising inter-rater reliability.
+Designs structured data extraction forms tailored to the specific research questions and study types included in a systematic review. The form captures all variables needed for synthesis while minimising extraction burden and maximising inter-rater reliability.
 
 ## Prompt
 
@@ -96,12 +96,12 @@ Include a free-text notes field for:
 
 ### Inputs
 
-- **Research questions:** {{research_questions}}
-- **Included study designs:** {{study_designs}}
-- **Primary outcomes:** {{primary_outcomes}}
-- **Secondary outcomes:** {{secondary_outcomes}}
-- **Review type:** {{review_type}}
-- **Number of extractors:** {{extractor_count}}
+- **Research questions:** [the refined research questions from Stage 1]
+- **Included study designs:** {{input.study_designs}}
+- **Primary outcomes:** {{input.primary_outcomes}}
+- **Secondary outcomes:** {{input.secondary_outcomes}}
+- **Review type:** [the review type from the refined research question output in Stage 1]
+- **Number of extractors:** {{input.extractor_count}}
 
 ### Output Format
 

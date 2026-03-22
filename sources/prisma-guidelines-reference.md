@@ -122,7 +122,7 @@ The PRISMA 2020 flow diagram tracks the flow of information through the differen
 
 #### Minimum Number of Databases
 - Cochrane recommends searching at least CENTRAL plus two other databases
-- Most guidelines recommend 4+ databases for comprehensive coverage
+- Most guidelines recommend 4+ databases for thorough coverage
 - Always include at least one general database (e.g., Scopus, Web of Science) and one discipline-specific database
 
 #### Screening Standards

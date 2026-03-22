@@ -21,7 +21,7 @@ Generates structured, unambiguous inclusion and exclusion criteria for systemati
 
 ## Prompt
 
-You are a systematic review methodologist specialising in study selection protocols. Your task is to develop comprehensive, operationally precise inclusion and exclusion criteria for the systematic review described below. The criteria must be specific enough that two independent reviewers would make the same screening decision for at least 90% of records.
+You are a systematic review methodologist specialising in study selection protocols. Your task is to develop detailed, operationally precise inclusion and exclusion criteria for the systematic review described below. The criteria must be specific enough that two independent reviewers would make the same screening decision for at least 90% of records.
 
 ### Instructions
 
@@ -82,10 +82,10 @@ Specify the screening procedure:
 
 ### Inputs
 
-- **Research question components:** {{question_components}}
-- **Review type:** {{review_type}}
-- **Team size:** {{team_size}} (number of reviewers available)
-- **Known grey areas:** {{known_ambiguities}} (any specific scenarios you anticipate being difficult to screen)
+- **Research question components:** [the PICO/SPIDER breakdown from Stage 1]
+- **Review type:** [the review type from the refined research question output in Stage 1]
+- **Team size:** {{input.team_size}} (number of reviewers available)
+- **Known grey areas:** {{input.known_ambiguities}} (any specific scenarios you anticipate being difficult to screen)
 
 ### Output Format
 

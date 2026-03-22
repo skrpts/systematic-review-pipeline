@@ -127,10 +127,22 @@ Invoke the **evidence-synthesis** skill via the **evidence-synthesis-writer** pr
 
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
-| `{{input.draft_research_question}}` | Yes | Draft research question | `Paste the relevant brief, notes, source material, or dataset here.` |
-| `{{input.field_of_study}}` | Yes | field of study | `Paste the relevant brief, notes, source material, or dataset here.` |
-| `{{input.review_scope}}` | Yes | review scope | `Paste the relevant brief, notes, source material, or dataset here.` |
-| `{{input.target_databases}}` | No | target databases | `Paste the latest metrics, exported data, or summary notes relevant to the workflow.` |
+| `{{input.draft_research_question}}` | Yes | Draft research question to refine for the systematic review | `What is the effectiveness of mindfulness interventions for reducing anxiety in university students?` |
+| `{{input.field_of_study}}` | Yes | Academic field or discipline | `Clinical Psychology` |
+| `{{input.review_scope}}` | Yes | Type of review (systematic review, meta-analysis, scoping review) | `Systematic review` |
+| `{{input.target_databases}}` | No | Databases to search | `PubMed, Scopus, PsycINFO, Web of Science` |
+| `{{input.known_studies}}` | No | Known relevant studies for sensitivity validation | `Smith et al. (2023), Jones & Brown (2024)` |
+| `{{input.constraints}}` | No | Timeline, team size, resource limitations | `6 months, 2 reviewers, no external funding` |
+| `{{input.date_range}}` | No | Publication date range for the search | `2015-2025` |
+| `{{input.language_restrictions}}` | No | Language restrictions for included studies | `English only` |
+| `{{input.study_type_filter}}` | No | Study type filter for the search | `Randomised controlled trials` |
+| `{{input.team_size}}` | No | Number of reviewers available | `2` |
+| `{{input.known_ambiguities}}` | No | Known grey areas for screening decisions | `Studies with mixed populations (adults and adolescents)` |
+| `{{input.study_designs}}` | No | Included study designs | `RCTs and quasi-experimental studies` |
+| `{{input.primary_outcomes}}` | No | Primary outcomes of interest | `Anxiety symptoms measured by validated scales` |
+| `{{input.secondary_outcomes}}` | No | Secondary outcomes of interest | `Wellbeing, academic performance, dropout rates` |
+| `{{input.extractor_count}}` | No | Number of data extractors | `2` |
+| `{{input.synthesis_approach}}` | No | Synthesis approach for the evidence | `Narrative synthesis` |
 
 ## Outputs
 

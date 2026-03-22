@@ -71,11 +71,11 @@ Assess whether the refined question is feasible for a systematic review:
 
 ### Inputs
 
-- **Draft research question:** {{draft_question}}
-- **Field of study:** {{field_of_study}}
-- **Review type:** {{review_type}} (systematic review, meta-analysis, scoping review, qualitative evidence synthesis)
-- **Known relevant studies:** {{known_studies}} (if any — used for scoping)
-- **Constraints:** {{constraints}} (timeline, team size, resource limitations)
+- **Draft research question:** {{input.draft_research_question}}
+- **Field of study:** {{input.field_of_study}}
+- **Review type:** {{input.review_scope}} (systematic review, meta-analysis, scoping review, qualitative evidence synthesis)
+- **Known relevant studies:** {{input.known_studies}} (if any — used for scoping)
+- **Constraints:** {{input.constraints}} (timeline, team size, resource limitations)
 
 ### Output Format
 
