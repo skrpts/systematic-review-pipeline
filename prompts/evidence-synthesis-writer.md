@@ -97,11 +97,11 @@ Derive implications from the evidence:
 
 ### Inputs
 
-- **Extracted data:** [the completed extraction forms for all included studies from Stage 4]
-- **Risk of bias results:** [the risk of bias assessment results from Stage 4]
-- **Research questions:** [the refined research questions from Stage 1]
+- **Extracted data:** {{steps.data-extraction-form-builder.output}}
+- **Risk of bias results:** Drawn from the data extraction forms above.
+- **Research questions:** {{steps.research-question-refiner.output}}
 - **Synthesis approach:** {{input.synthesis_approach}} (narrative synthesis, framework synthesis, thematic synthesis, meta-analysis reporting)
-- **PRISMA flow numbers:** [the PRISMA flow diagram numbers from Stage 3]
+- **PRISMA flow numbers:** {{steps.screening-criteria-generator.output}}
 
 ### Output Format
 

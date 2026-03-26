@@ -82,8 +82,8 @@ Specify the screening procedure:
 
 ### Inputs
 
-- **Research question components:** [the PICO/SPIDER breakdown from Stage 1]
-- **Review type:** [the review type from the refined research question output in Stage 1]
+- **Research question components:** {{steps.research-question-refiner.output}}
+- **Review type:** {{input.review_scope}}
 - **Team size:** {{input.team_size}} (number of reviewers available)
 - **Known grey areas:** {{input.known_ambiguities}} (any specific scenarios you anticipate being difficult to screen)
 

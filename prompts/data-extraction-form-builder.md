@@ -96,11 +96,12 @@ Include a free-text notes field for:
 
 ### Inputs
 
-- **Research questions:** [the refined research questions from Stage 1]
+- **Research questions:** {{steps.research-question-refiner.output}}
 - **Included study designs:** {{input.study_designs}}
 - **Primary outcomes:** {{input.primary_outcomes}}
 - **Secondary outcomes:** {{input.secondary_outcomes}}
-- **Review type:** [the review type from the refined research question output in Stage 1]
+- **Screening criteria:** {{steps.screening-criteria-generator.output}}
+- **Review type:** {{input.review_scope}}
 - **Number of extractors:** {{input.extractor_count}}
 
 ### Output Format

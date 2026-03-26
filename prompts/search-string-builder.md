@@ -91,12 +91,12 @@ Produce a PRISMA-compliant search documentation table:
 
 ### Inputs
 
-- **Research question components:** [the PICO/SPIDER breakdown from the research question refiner in Stage 1]
+- **Research question components:** {{steps.research-question-refiner.output}}
 - **Target databases:** {{input.target_databases}}
 - **Date range:** {{input.date_range}} (or "no date restriction")
 - **Language restrictions:** {{input.language_restrictions}} (or "no language restriction")
 - **Study type filter:** {{input.study_type_filter}} (if applicable)
-- **Known relevant studies:** [the known relevant studies from the refined research question output in Stage 1 — use these for sensitivity validation]
+- **Known relevant studies:** {{input.known_studies}} (use these for sensitivity validation)
 
 ### Output Format
 
