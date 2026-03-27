@@ -24,9 +24,11 @@ tags:
 
 # --- Security & Access ---
 requires:
-  services: []
+  services:
+    - "llm-service"
   permissions: []
   data_handling:
+    - "pii"
     - "academic-sources"
     - "research-data"
 
