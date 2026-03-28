@@ -1,4 +1,5 @@
 # --- Identity ---
+id: "9e53315b-8897-44c0-8ed4-b346a5ce7a1f"
 name: "systematic-review-pipeline"
 display_name: "Systematic Review Pipeline"
 description: "Systematic literature review following PRISMA methodology — search strategy, screening, extraction, and synthesis"
