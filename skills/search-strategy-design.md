@@ -3,7 +3,7 @@ type: skill
 id: search-strategy-design
 title: Search Strategy Design
 description: "Designs thorough, reproducible search strategies for systematic literature reviews"
-tags: [Production, Tested]
+tags: [Production, Tested, planning:research, research:synthesis]
 connections:
   - target: llm-service
     type: runs_on

@@ -3,7 +3,7 @@ type: asset
 id: prisma-flow-template
 title: PRISMA Flow Diagram Template
 description: "PRISMA 2020 flow diagram template for documenting study selection in systematic reviews"
-tags: [Production, Customer-Facing]
+tags: [Production, Customer-Facing, research:screening, research:synthesis]
 connections:
   - target: study-screening
     type: references

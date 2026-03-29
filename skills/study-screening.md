@@ -3,7 +3,7 @@ type: skill
 id: study-screening
 title: Study Screening
 description: "Defines screening criteria and supports systematic study selection for literature reviews"
-tags: [Production, Tested]
+tags: [Production, Tested, research:screening, research:synthesis]
 connections:
   - target: llm-service
     type: runs_on

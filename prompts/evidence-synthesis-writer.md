@@ -3,7 +3,7 @@ type: prompt
 id: evidence-synthesis-writer
 title: Evidence Synthesis Writer
 description: "Synthesises extracted evidence into a structured narrative review"
-tags: [Production]
+tags: [Production, research:synthesis, research:screening]
 connections:
   - target: evidence-synthesis
     type: derived_from

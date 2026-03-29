@@ -3,7 +3,7 @@ type: source
 id: prisma-guidelines-reference
 title: PRISMA Guidelines Reference
 description: "Reference to the PRISMA 2020 reporting guidelines for systematic reviews"
-tags: [Production, Customer-Facing]
+tags: [Production, Customer-Facing, research:screening, research:synthesis]
 connections: []
 metadata:
   source_type: reference

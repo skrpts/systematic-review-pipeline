@@ -3,7 +3,7 @@ type: asset
 id: data-extraction-template
 title: Data Extraction Template
 description: "Structured template for extracting data from studies included in a systematic review"
-tags: [Production, Customer-Facing]
+tags: [Production, Customer-Facing, research:synthesis, research:screening]
 connections:
   - target: data-extraction-form-builder
     type: references

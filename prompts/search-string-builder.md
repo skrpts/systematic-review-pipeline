@@ -3,7 +3,7 @@ type: prompt
 id: search-string-builder
 title: Search String Builder
 description: "Builds database-specific search strings with Boolean operators for systematic review"
-tags: [Production]
+tags: [Production, research:synthesis, research:screening]
 connections:
   - target: search-strategy-design
     type: derived_from
