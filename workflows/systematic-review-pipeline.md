@@ -3,7 +3,7 @@ type: workflow
 id: systematic-review-pipeline
 title: Systematic Review Pipeline
 description: "End-to-end systematic literature review following PRISMA 2020 methodology"
-tags: [Production, Tested, research:screening, research:synthesis]
+tags: [Production, Tested, Academic, Research]
 connections:
   - target: search-strategy-design
     type: uses

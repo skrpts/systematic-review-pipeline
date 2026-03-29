@@ -3,7 +3,7 @@ type: prompt
 id: data-extraction-form-builder
 title: Data Extraction Form Builder
 description: "Designs structured data extraction forms for systematic review"
-tags: [Production, research:screening, research:synthesis, utility:extraction]
+tags: [Production, Automation, Research]
 connections:
   - target: study-screening
     type: derived_from

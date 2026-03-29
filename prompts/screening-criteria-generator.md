@@ -3,7 +3,7 @@ type: prompt
 id: screening-criteria-generator
 title: Screening Criteria Generator
 description: "Defines structured inclusion and exclusion criteria for systematic review screening"
-tags: [Production, research:screening, research:synthesis]
+tags: [Production, Research, Academic]
 connections:
   - target: study-screening
     type: derived_from

@@ -3,7 +3,7 @@ type: prompt
 id: research-question-refiner
 title: Research Question Refiner
 description: "Refines research questions using PICO or SPIDER frameworks for systematic review"
-tags: [Production, planning:research, research:synthesis]
+tags: [Production, Research, Academic]
 connections:
   - target: search-strategy-design
     type: derived_from

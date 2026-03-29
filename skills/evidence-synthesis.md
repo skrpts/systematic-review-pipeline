@@ -3,7 +3,7 @@ type: skill
 id: evidence-synthesis
 title: Evidence Synthesis
 description: "Synthesises extracted evidence from systematic review into a coherent narrative review"
-tags: [Production, Tested, research:synthesis, research:screening]
+tags: [Production, Tested, Research, Academic]
 connections:
   - target: llm-service
     type: runs_on

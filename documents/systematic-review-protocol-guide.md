@@ -3,7 +3,7 @@ type: document
 id: systematic-review-protocol-guide
 title: Systematic Review Protocol Guide
 description: "Guide to writing and registering a systematic review protocol"
-tags: [Production, Customer-Facing, research:synthesis, research:screening]
+tags: [Production, Customer-Facing, Research, Writing]
 connections:
   - target: search-strategy-design
     type: references
