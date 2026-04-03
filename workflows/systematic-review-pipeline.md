@@ -35,6 +35,8 @@ connections:
     type: uses
   - target: data-extraction-template
     type: uses
+  - target: evidence-claim-check
+    type: uses
 metadata:
   estimated_duration: "120-240 minutes"
   trigger: manual
