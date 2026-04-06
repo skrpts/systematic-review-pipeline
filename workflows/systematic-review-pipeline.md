@@ -13,18 +13,6 @@ connections:
     type: uses
   - target: source-summarisation
     type: uses
-  - target: research-question-refiner
-    type: uses
-  - target: search-string-builder
-    type: uses
-  - target: screening-criteria-generator
-    type: uses
-  - target: data-extraction-form-builder
-    type: uses
-  - target: evidence-synthesis-writer
-    type: uses
-  - target: summarise-source
-    type: uses
   - target: llm-service
     type: runs_on
   - target: prisma-guidelines-reference
