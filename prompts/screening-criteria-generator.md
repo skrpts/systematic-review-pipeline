@@ -82,7 +82,7 @@ Specify the screening procedure:
 
 ### Inputs
 
-- **Research question components:** {{steps.research-question-refiner.output}}
+- **Research question components:** {{steps.Search Strategy Design.output}}
 - **Review type:** {{input.review_scope}}
 - **Team size:** {{input.team_size}} (number of reviewers available)
 - **Known grey areas:** {{input.known_ambiguities}} (any specific scenarios you anticipate being difficult to screen)

@@ -96,11 +96,11 @@ Include a free-text notes field for:
 
 ### Inputs
 
-- **Research questions:** {{steps.research-question-refiner.output}}
+- **Research questions:** {{steps.Search Strategy Design.output}}
 - **Included study designs:** {{input.study_designs}}
 - **Primary outcomes:** {{input.primary_outcomes}}
 - **Secondary outcomes:** {{input.secondary_outcomes}}
-- **Screening criteria:** {{steps.screening-criteria-generator.output}}
+- **Screening criteria:** {{steps.Study Screening.output}}
 - **Review type:** {{input.review_scope}}
 - **Number of extractors:** {{input.extractor_count}}
 

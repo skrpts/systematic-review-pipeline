@@ -97,11 +97,11 @@ Derive implications from the evidence:
 
 ### Inputs
 
-- **Extracted data:** {{steps.data-extraction-form-builder.output}}
+- **Extracted data:** {{steps.Study Screening.output}}
 - **Risk of bias results:** Drawn from the data extraction forms above.
-- **Research questions:** {{steps.research-question-refiner.output}}
+- **Research questions:** {{steps.Search Strategy Design.output}}
 - **Synthesis approach:** {{input.synthesis_approach}} (narrative synthesis, framework synthesis, thematic synthesis, meta-analysis reporting)
-- **PRISMA flow numbers:** {{steps.screening-criteria-generator.output}}
+- **PRISMA flow numbers:** {{steps.Study Screening.output}}
 
 ### Output Format
 
