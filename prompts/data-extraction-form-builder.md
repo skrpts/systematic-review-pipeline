@@ -100,7 +100,7 @@ Include a free-text notes field for:
 - **Included study designs:** {{input.study_designs}}
 - **Primary outcomes:** {{input.primary_outcomes}}
 - **Secondary outcomes:** {{input.secondary_outcomes}}
-- **Screening criteria:** {{steps.Study Screening.output}}
+- **Screening criteria:** {{steps.previous.output}}
 - **Review type:** {{input.review_scope}}
 - **Number of extractors:** {{input.extractor_count}}
 

@@ -91,7 +91,7 @@ Produce a PRISMA-compliant search documentation table:
 
 ### Inputs
 
-- **Research question components:** {{steps.Search Strategy Design.output}}
+- **Research question components:** {{steps.previous.output}}
 - **Target databases:** {{input.target_databases}}
 - **Date range:** {{input.date_range}} (or "no date restriction")
 - **Language restrictions:** {{input.language_restrictions}} (or "no language restriction")
