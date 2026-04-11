@@ -28,6 +28,20 @@ connections:
 metadata:
   estimated_duration: "120-240 minutes"
   trigger: manual
+execution:
+  - skill: "search-strategy-design"
+  - skill: "study-screening"
+    input_from: "search-strategy-design"
+  - skill: "source-summarisation"
+    input_from: "study-screening"
+  - skill: "prisma-flow-template"
+    input_from: "source-summarisation"
+  - skill: "data-extraction-template"
+    input_from: "prisma-flow-template"
+  - skill: "evidence-synthesis"
+    input_from: "data-extraction-template"
+  - skill: "evidence-claim-check"
+    input_from: "data-extraction-template"
 ---
 
 ## Overview
