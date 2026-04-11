@@ -4,6 +4,37 @@ id: research-question-refiner
 title: Research Question Refiner
 description: "Refines research questions using PICO or SPIDER frameworks for systematic review"
 tags: [Production, Research, Academic]
+inputs:
+  draft_research_question:
+    label: "Draft Research Question"
+    description: "An initial research question to refine and develop"
+    example: "Does exercise improve mental health?"
+    required: true
+    type: text
+  field_of_study:
+    label: "Field of Study"
+    description: "The academic discipline"
+    example: "Cognitive Psychology"
+    required: true
+    type: text
+  review_scope:
+    label: "Review Scope"
+    description: "What aspects of the code to focus on"
+    example: "Security vulnerabilities, performance bottlenecks, and API design"
+    required: true
+    type: text
+  known_studies:
+    label: "Known Studies"
+    description: "Key studies or papers already identified as relevant"
+    example: "Smith et al. (2023), Johnson & Lee (2022)"
+    required: true
+    type: text
+  constraints:
+    label: "Constraints"
+    description: "Known constraints"
+    example: "Must ship before conference on 15 June. Cannot change database."
+    required: true
+    type: text
 connections:
   - target: search-strategy-design
     type: derived_from

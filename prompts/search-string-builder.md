@@ -4,6 +4,37 @@ id: search-string-builder
 title: Search String Builder
 description: "Builds database-specific search strings with Boolean operators for systematic review"
 tags: [Production, Research, Academic]
+inputs:
+  target_databases:
+    label: "Target Databases"
+    description: "The databases to search"
+    example: "PubMed, CINAHL, PsycINFO"
+    required: true
+    type: text
+  date_range:
+    label: "Date Range"
+    description: "The time period to analyse"
+    example: "1 March 2026 — 31 March 2026"
+    required: true
+    type: text
+  language_restrictions:
+    label: "Language Restrictions"
+    description: "Any language-specific requirements or restrictions"
+    example: "Use formal register. Avoid anglicisms."
+    required: true
+    type: text
+  study_type_filter:
+    label: "Study Type Filter"
+    description: "Filter for specific study types"
+    example: "Include only peer-reviewed empirical studies"
+    required: true
+    type: text
+  known_studies:
+    label: "Known Studies"
+    description: "Key studies or papers already identified as relevant"
+    example: "Smith et al. (2023), Johnson & Lee (2022)"
+    required: true
+    type: text
 connections:
   - target: search-strategy-design
     type: derived_from

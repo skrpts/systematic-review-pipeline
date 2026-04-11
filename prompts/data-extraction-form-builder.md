@@ -4,6 +4,37 @@ id: data-extraction-form-builder
 title: Data Extraction Form Builder
 description: "Designs structured data extraction forms for systematic review"
 tags: [Production, Automation, Research]
+inputs:
+  study_designs:
+    label: "Study Designs"
+    description: "Types of study designs to include"
+    example: "RCTs, cohort studies, case-control studies"
+    required: true
+    type: text
+  primary_outcomes:
+    label: "Primary Outcomes"
+    description: "The primary outcomes to measure"
+    example: "Cognitive test scores, academic GPA"
+    required: true
+    type: text
+  secondary_outcomes:
+    label: "Secondary Outcomes"
+    description: "Secondary outcomes to track"
+    example: "Self-reported wellbeing, attendance rates"
+    required: true
+    type: text
+  review_scope:
+    label: "Review Scope"
+    description: "What aspects of the code to focus on"
+    example: "Security vulnerabilities, performance bottlenecks, and API design"
+    required: true
+    type: text
+  extractor_count:
+    label: "Extractor Count"
+    description: "Number of independent data extractors"
+    example: "2"
+    required: true
+    type: text
 connections:
   - target: study-screening
     type: derived_from

@@ -4,6 +4,24 @@ id: screening-criteria-generator
 title: Screening Criteria Generator
 description: "Defines structured inclusion and exclusion criteria for systematic review screening"
 tags: [Production, Research, Academic]
+inputs:
+  review_scope:
+    label: "Review Scope"
+    description: "What aspects of the code to focus on"
+    example: "Security vulnerabilities, performance bottlenecks, and API design"
+    required: true
+    type: text
+  team_size:
+    label: "Team Size"
+    description: "Number of people on the team"
+    example: "6"
+    required: true
+    type: text
+  known_ambiguities:
+    label: "Known Ambiguities"
+    description: "Known Ambiguities"
+    required: true
+    type: text
 connections:
   - target: study-screening
     type: derived_from

@@ -4,6 +4,13 @@ id: evidence-synthesis-writer
 title: Evidence Synthesis Writer
 description: "Synthesises extracted evidence into a structured narrative review"
 tags: [Production, Research, Academic]
+inputs:
+  synthesis_approach:
+    label: "Synthesis Approach"
+    description: "How to synthesise findings across studies"
+    example: "Narrative synthesis with thematic grouping"
+    required: true
+    type: text
 connections:
   - target: evidence-synthesis
     type: derived_from
