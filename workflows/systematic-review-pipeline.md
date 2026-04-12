@@ -30,18 +30,25 @@ metadata:
   trigger: manual
 execution:
   - skill: "search-strategy-design"
+    step_type: "generation"
   - skill: "study-screening"
     input_from: "search-strategy-design"
+    step_type: "synthesis"
   - skill: "source-summarisation"
     input_from: "study-screening"
+    step_type: "synthesis"
   - skill: "prisma-flow-template"
     input_from: "source-summarisation"
+    step_type: "generation"
   - skill: "data-extraction-template"
     input_from: "prisma-flow-template"
+    step_type: "generation"
   - skill: "evidence-synthesis"
     input_from: "data-extraction-template"
+    step_type: "synthesis"
   - skill: "evidence-claim-check"
     input_from: "data-extraction-template"
+    step_type: "review"
 ---
 
 ## Overview
