@@ -20,6 +20,7 @@ inputs:
   known_ambiguities:
     label: "Known Ambiguities"
     description: "Known Ambiguities"
+    example: "Inconsistent outcome measures across studies, varying follow-up periods (3-24 months), different definitions of the intervention"
     required: true
     type: text
 connections:
