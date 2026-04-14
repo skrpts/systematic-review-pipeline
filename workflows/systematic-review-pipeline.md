@@ -28,6 +28,15 @@ connections:
 metadata:
   estimated_duration: "120-240 minutes"
   trigger: manual
+output_step: "data-extraction-template"
+composite_steps:
+  - "search-strategy-design"
+  - "study-screening"
+  - "evidence-synthesis"
+  - "source-summarisation"
+  - "prisma-flow-template"
+  - "data-extraction-template"
+  - "evidence-claim-check"
 execution:
   - skill: "search-strategy-design"
     step_type: "generation"
