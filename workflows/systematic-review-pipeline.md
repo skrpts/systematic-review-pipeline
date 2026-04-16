@@ -13,6 +13,10 @@ connections:
     type: uses
   - target: source-summarisation
     type: uses
+  - target: language-polish
+    type: uses
+  - target: consistency-check
+    type: uses
   - target: llm-service
     type: runs_on
   - target: prisma-guidelines-reference
@@ -28,7 +32,7 @@ connections:
 metadata:
   estimated_duration: "120-240 minutes"
   trigger: manual
-output_step: "data-extraction-template"
+output_step: "language-polish"
 composite_steps:
   - "search-strategy-design"
   - "study-screening"
@@ -37,6 +41,8 @@ composite_steps:
   - "prisma-flow-template"
   - "data-extraction-template"
   - "evidence-claim-check"
+  - "consistency-check"
+  - "language-polish"
 execution:
   - skill: "search-strategy-design"
     step_type: "generation"
@@ -53,6 +59,11 @@ execution:
       step_type: "review"
   - skill: "evidence-synthesis"
     step_type: "synthesis"
+  - skill: "language-polish"
+    step_type: "content"
+  - parallel:
+    - skill: "consistency-check"
+      step_type: "review"
 ---
 
 ## Overview

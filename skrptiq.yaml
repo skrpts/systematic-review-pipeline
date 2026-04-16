@@ -3,7 +3,7 @@ id: "9e53315b-8897-44c0-8ed4-b346a5ce7a1f"
 name: "systematic-review-pipeline"
 display_name: "Systematic Review Pipeline"
 description: "Systematic literature review following PRISMA methodology — search strategy, screening, extraction, and synthesis"
-version: "1.1.12"
+version: "1.1.13"
 engine: ">=1.0.0"
 
 # --- Attribution ---
@@ -35,11 +35,11 @@ requires:
 
 # --- Contents ---
 contents:
-  skills: 5
-  prompts: 7
+  skills: 7
+  prompts: 9
   workflows: 1
   services: 1
   sources: 1
   documents: 1
   assets: 2
-  total: 18
+  total: 22
