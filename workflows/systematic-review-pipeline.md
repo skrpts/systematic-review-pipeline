@@ -46,8 +46,10 @@ composite_steps:
 execution:
   - skill: "search-strategy-design"
     step_type: "generation"
+    prompt: "search-string-builder"
   - skill: "study-screening"
     step_type: "synthesis"
+    prompt: "screening-criteria-generator"
   - skill: "source-summarisation"
     step_type: "synthesis"
   - skill: "prisma-flow-template"
