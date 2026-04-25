@@ -7,6 +7,12 @@ tags: [Production, Quality, Academic]
 connections:
   - target: llm-service
     type: runs_on
+context_params:
+  evidence_rigour:
+    label: "Evidence Rigour"
+    description: "How strict to be about evidence quality — Light, Standard, Thorough, or Exhaustive"
+    default: "Standard"
+    required: false
 ---
 
 ## Capability

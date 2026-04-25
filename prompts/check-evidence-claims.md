@@ -24,6 +24,14 @@ You are a research reviewer. Examine the document below and check whether each c
 
 {{steps.previous.output}}
 
+### Evidence Rigour: {{step.context.evidence_rigour}}
+
+Adjust your review based on the rigour level:
+- **Light**: Check only major claims (thesis statements, key conclusions). Flag only clearly unsupported assertions.
+- **Standard** (default): Check all significant claims. Flag unsupported and overstated claims.
+- **Thorough**: Check all claims including supporting points. Assess source quality and recency. Flag weak evidence chains.
+- **Exhaustive**: Maximum rigour. Check every factual claim. Assess primary vs secondary sources, sample sizes, methodology quality, potential conflicts of interest, and replicability of cited studies.
+
 ### Instructions
 
 For each significant claim in the document:
