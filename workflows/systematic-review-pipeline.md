@@ -51,20 +51,26 @@ execution:
     step_type: "synthesis"
     prompt: "screening-criteria-generator"
   - skill: "source-summarisation"
+    prompt: "summarise-source"
     step_type: "synthesis"
   - skill: "prisma-flow-template"
     step_type: "generation"
   - skill: "data-extraction-template"
+    prompt: "data-extraction-form-builder"
     step_type: "generation"
   - parallel:
     - skill: "evidence-claim-check"
+      prompt: "check-evidence-claims"
       step_type: "review"
   - skill: "evidence-synthesis"
+    prompt: "evidence-synthesis-writer"
     step_type: "synthesis"
   - skill: "language-polish"
+    prompt: "polish-language"
     step_type: "content"
   - parallel:
     - skill: "consistency-check"
+      prompt: "check-consistency"
       step_type: "review"
 ---
 
