@@ -62,16 +62,24 @@ execution:
     - skill: "evidence-claim-check"
       prompt: "check-evidence-claims"
       step_type: "review"
+      context:
+        evidence_rigour: ""
   - skill: "evidence-synthesis"
     prompt: "evidence-synthesis-writer"
     step_type: "synthesis"
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
+    context:
+      voice_profile: ""
+      grammar_strictness: ""
   - parallel:
     - skill: "consistency-check"
       prompt: "check-consistency"
       step_type: "review"
+      context:
+        voice_profile: ""
+        consistency_strictness: ""
 ---
 
 ## Overview
