@@ -54,7 +54,7 @@ execution:
     prompt: "summarise-source"
     step_type: "synthesis"
   - skill: "prisma-flow-template"
-    step_type: "generation"
+    step_type: "local.template"
   - skill: "data-extraction-template"
     prompt: "data-extraction-form-builder"
     step_type: "generation"
@@ -63,7 +63,7 @@ execution:
       prompt: "check-evidence-claims"
       step_type: "review"
       context:
-        evidence_rigour: ""
+        evidence_rigour: "Standard"
   - skill: "evidence-synthesis"
     prompt: "evidence-synthesis-writer"
     step_type: "synthesis"
@@ -71,15 +71,15 @@ execution:
     prompt: "polish-language"
     step_type: "content"
     context:
-      voice_profile: ""
-      grammar_strictness: ""
+      voice_profile: "Neutral professional tone"
+      grammar_strictness: "Professional"
   - parallel:
     - skill: "consistency-check"
       prompt: "check-consistency"
       step_type: "review"
       context:
-        voice_profile: ""
-        consistency_strictness: ""
+        voice_profile: "Neutral professional tone"
+        consistency_strictness: "Standard"
 ---
 
 ## Overview
