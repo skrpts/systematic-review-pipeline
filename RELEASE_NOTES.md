@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.23
+Bundle re-signed with canonical engine signing pipeline (Wave 2 migration).
+
 ## v1.1.22
 Signature fix — RELEASE_NOTES.md now included in integrity checksum.
 
