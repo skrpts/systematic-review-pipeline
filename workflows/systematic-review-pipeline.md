@@ -47,29 +47,41 @@ execution:
   - skill: "search-strategy-design"
     step_type: "generation"
     prompt: "search-string-builder"
+    output: { name: "search_strategy", type: "text" }
   - skill: "study-screening"
     step_type: "synthesis"
     prompt: "screening-criteria-generator"
+    output: { name: "screening_criteria", type: "text" }
   - skill: "source-summarisation"
     prompt: "summarise-source"
     step_type: "synthesis"
+    output: { name: "summaries", type: "text" }
+    bindings:
+      source_text:
+        from_step: "Study Screening"
+        field: output
   - skill: "prisma-flow-template"
     step_type: "local.template"
+    output: { name: "prisma_flow", type: "text" }
   - skill: "data-extraction-template"
     prompt: "data-extraction-form-builder"
     step_type: "generation"
+    output: { name: "extraction_form", type: "text" }
   - parallel:
     - skill: "evidence-claim-check"
       prompt: "check-evidence-claims"
       step_type: "review"
+      output: { name: "evidence_report", type: "text" }
       context:
         evidence_rigour: "Standard"
   - skill: "evidence-synthesis"
     prompt: "evidence-synthesis-writer"
     step_type: "synthesis"
+    output: { name: "evidence_synthesis", type: "text" }
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
+    output: { name: "polished_review", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
@@ -77,6 +89,7 @@ execution:
     - skill: "consistency-check"
       prompt: "check-consistency"
       step_type: "review"
+      output: { name: "consistency_verdict", type: "decision" }
       context:
         voice_profile: "Neutral professional tone"
         consistency_strictness: "Standard"
