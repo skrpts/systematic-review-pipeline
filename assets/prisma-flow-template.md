@@ -97,7 +97,7 @@ Reports of included studies
 
 ### Identification Section
 - Record the total number of records identified from each database separately
-- Include records from all sources: databases, registers, citation searching, grey literature
+- Include records from all sources: databases, registers, citation searching, gray literature
 - If using automation tools for deduplication, record the number removed
 
 ### Screening Section

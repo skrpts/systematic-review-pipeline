@@ -60,10 +60,10 @@ execution:
       source_text:
         from_step: "Study Screening"
         field: output
-  - skill: "prisma-flow-template"
+  - id: "prisma-flow-template"
     step_type: "local.template"
     output: { name: "prisma_flow", type: "text" }
-  - skill: "data-extraction-template"
+  - id: "data-extraction-template"
     prompt: "data-extraction-form-builder"
     step_type: "generation"
     output: { name: "extraction_form", type: "text" }
@@ -97,9 +97,9 @@ execution:
 
 ## Overview
 
-This workflow orchestrates a complete systematic literature review following the PRISMA 2020 reporting guidelines. It covers the full review lifecycle from research question refinement through search strategy development, study screening, data extraction, and evidence synthesis. The pipeline is designed for single reviewers or small teams and emphasises transparency and reproducibility at every stage.
+This workflow orchestrates a complete systematic literature review following the PRISMA 2020 reporting guidelines. It covers the full review lifecycle from research question refinement through search strategy development, study screening, data extraction, and evidence synthesis. The pipeline is designed for single reviewers or small teams and emphasizes transparency and reproducibility at every stage.
 
-Systematic reviews are the gold standard of evidence synthesis. Unlike narrative reviews, they follow a pre-specified, reproducible methodology that minimises bias in study identification, selection, and synthesis. This pipeline ensures you follow that methodology rigorously.
+Systematic reviews are the gold standard of evidence synthesis. Unlike narrative reviews, they follow a pre-specified, reproducible methodology that minimizes bias in study identification, selection, and synthesis. This pipeline ensures you follow that methodology rigorously.
 
 ## Prerequisites
 
@@ -135,7 +135,7 @@ Invoke the **search-strategy-design** skill via the **search-string-builder** pr
 
 **Input:** Search results (exported from databases), inclusion/exclusion criteria
 
-Invoke the **study-screening** skill via the **screening-criteria-generator** prompt to formalise the inclusion and exclusion criteria. Then apply these criteria in a two-stage screening process:
+Invoke the **study-screening** skill via the **screening-criteria-generator** prompt to formalize the inclusion and exclusion criteria. Then apply these criteria in a two-stage screening process:
 
 **Stage 3a: Title and abstract screening**
 - Remove duplicates across databases
@@ -167,7 +167,7 @@ Invoke the **study-screening** skill via the **data-extraction-form-builder** pr
 
 **Input:** Completed data extraction forms, research questions, quality assessment results
 
-Invoke the **evidence-synthesis** skill via the **evidence-synthesis-writer** prompt. Synthesise the extracted evidence into a coherent narrative organised by research question, outcome, or theme.
+Invoke the **evidence-synthesis** skill via the **evidence-synthesis-writer** prompt. Synthesize the extracted evidence into a coherent narrative organized by research question, outcome, or theme.
 
 **Output:** Complete evidence synthesis narrative, summary tables, and recommendations for practice/research.
 
@@ -196,7 +196,7 @@ Invoke the **evidence-synthesis** skill via the **evidence-synthesis-writer** pr
 | `{{input.language_restrictions}}` | No | Language restrictions for included studies | `English only` |
 | `{{input.study_type_filter}}` | No | Study type filter for the search | `Randomised controlled trials` |
 | `{{input.team_size}}` | No | Number of reviewers available | `2` |
-| `{{input.known_ambiguities}}` | No | Known grey areas for screening decisions | `Studies with mixed populations (adults and adolescents)` |
+| `{{input.known_ambiguities}}` | No | Known gray areas for screening decisions | `Studies with mixed populations (adults and adolescents)` |
 | `{{input.study_designs}}` | No | Included study designs | `RCTs and quasi-experimental studies` |
 | `{{input.primary_outcomes}}` | No | Primary outcomes of interest | `Anxiety symptoms measured by validated scales` |
 | `{{input.secondary_outcomes}}` | No | Secondary outcomes of interest | `Wellbeing, academic performance, dropout rates` |
@@ -218,7 +218,7 @@ Invoke the **evidence-synthesis** skill via the **evidence-synthesis-writer** pr
 Before running this workflow:
 
 1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
-2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+2. Review the included documents, assets, or source nodes and customize them to match your team, brand, or domain conventions where needed.
 3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
 
 ## Provider Notes

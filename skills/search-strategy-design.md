@@ -67,13 +67,13 @@ Designs thorough, reproducible search strategies for systematic literature revie
 - Complete search strategy for each target database
 - Sensitivity check results (known studies found/missed)
 - Search documentation table for PRISMA reporting
-- Recommended supplementary search methods (citation chaining, grey literature, hand-searching key journals)
+- Recommended supplementary search methods (citation chaining, gray literature, hand-searching key journals)
 
 ## Constraints
 
 - Search strategies must be fully reproducible — record every decision and the exact strings used
 - Do not rely on a single database — systematic reviews require searching at least 2 databases, preferably 4+
-- Include both controlled vocabulary and free-text terms to maximise recall
+- Include both controlled vocabulary and free-text terms to maximize recall
 - Do not apply language or date filters without explicit justification in the protocol
-- Favour sensitivity (capturing all relevant studies) over specificity (excluding irrelevant ones) — it is better to screen more results than to miss relevant studies
+- Favor sensitivity (capturing all relevant studies) over specificity (excluding irrelevant ones) — it is better to screen more results than to miss relevant studies
 - Document any deviations from the registered protocol

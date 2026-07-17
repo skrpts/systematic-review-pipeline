@@ -51,7 +51,7 @@ PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) is a
 | 12 | Describe the methods used for synthesis of results |
 | 13a | Describe any methods used to assess certainty in the body of evidence (e.g., GRADE) |
 | 13b | Describe any methods used to explore possible causes of heterogeneity (e.g., subgroup analysis, meta-regression) |
-| 13c | Describe any sensitivity analyses conducted |
+| 13c | Describe any sensitivity analyzes conducted |
 
 #### Results
 | Item | Checklist Item |
@@ -59,8 +59,8 @@ PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) is a
 | 14 | Describe the results of the search and selection process, ideally using a PRISMA flow diagram |
 | 15 | For each included study, present characteristics for which data were extracted and cite the study |
 | 16 | Present the assessment of risk of bias for each included study |
-| 17 | For each synthesis, briefly summarise the characteristics and risk of bias among contributing studies |
-| 18 | Present results of all statistical syntheses conducted. If meta-analysis was done, present for each the summary estimate and its precision and measures of statistical heterogeneity. Present results of all sensitivity analyses |
+| 17 | For each synthesis, briefly summarize the characteristics and risk of bias among contributing studies |
+| 18 | Present results of all statistical syntheses conducted. If meta-analysis was done, present for each the summary estimate and its precision and measures of statistical heterogeneity. Present results of all sensitivity analyzes |
 | 19 | Present assessments of certainty in the body of evidence for each outcome assessed |
 | 20 | Present results of all investigations of possible causes of heterogeneity |
 | 21 | Report any assessment of publication bias |
@@ -80,7 +80,7 @@ PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) is a
 | 27 | Describe and explain any amendments to information provided at registration or in the protocol |
 | 28 | Describe sources of financial or non-financial support and the role of funders |
 | 29 | Declare any competing interests of review authors |
-| 30 | Report which of the following are publicly available and where: review protocol, search strategy, data extracted, data used for analyses, analytic code |
+| 30 | Report which of the following are publicly available and where: review protocol, search strategy, data extracted, data used for analyzes, analytic code |
 
 ### PRISMA Flow Diagram
 

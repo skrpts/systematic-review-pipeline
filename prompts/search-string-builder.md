@@ -13,7 +13,7 @@ inputs:
     type: text
   date_range:
     label: "Date Range"
-    description: "The time period to analyse"
+    description: "The time period to analyze"
     example: "1 March 2026 — 31 March 2026"
     required: true
     type: text
@@ -48,7 +48,7 @@ metadata:
 
 ## Purpose
 
-Constructs detailed, database-specific search strings for systematic review searching. Translates the structured research question components into precise Boolean search queries optimised for each target database's syntax and controlled vocabulary.
+Constructs detailed, database-specific search strings for systematic review searching. Translates the structured research question components into precise Boolean search queries optimized for each target database's syntax and controlled vocabulary.
 
 ## Prompt
 
@@ -131,4 +131,4 @@ Produce a PRISMA-compliant search documentation table:
 
 ### Output Format
 
-Present the search strategy organised by database. For each database, show the numbered search lines (one concept per block), the combination line, any filters applied, and the total results. Follow with the sensitivity validation results and the PRISMA documentation table. Use code blocks for the search strings to preserve exact formatting.
+Present the search strategy organized by database. For each database, show the numbered search lines (one concept per block), the combination line, any filters applied, and the total results. Follow with the sensitivity validation results and the PRISMA documentation table. Use code blocks for the search strings to preserve exact formatting.

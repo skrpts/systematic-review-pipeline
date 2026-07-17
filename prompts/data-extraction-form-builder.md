@@ -48,11 +48,11 @@ metadata:
 
 ## Purpose
 
-Designs structured data extraction forms tailored to the specific research questions and study types included in a systematic review. The form captures all variables needed for synthesis while minimising extraction burden and maximising inter-rater reliability.
+Designs structured data extraction forms tailored to the specific research questions and study types included in a systematic review. The form captures all variables needed for synthesis while minimizing extraction burden and maximizing inter-rater reliability.
 
 ## Prompt
 
-You are a systematic review methodologist specialising in data extraction design. Your task is to create a structured data extraction form for the systematic review described below. The form must capture all information needed to answer the research questions and assess study quality, while being practical enough for reviewers to complete accurately and efficiently.
+You are a systematic review methodologist specializing in data extraction design. Your task is to create a structured data extraction form for the systematic review described below. The form must capture all information needed to answer the research questions and assess study quality, while being practical enough for reviewers to complete accurately and efficiently.
 
 ### Instructions
 

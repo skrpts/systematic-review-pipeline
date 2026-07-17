@@ -24,7 +24,7 @@ A systematic review protocol is a detailed plan written before the review begins
 - What the review will address (research questions)
 - How it will find studies (search strategy)
 - How it will select studies (inclusion/exclusion criteria)
-- How it will extract and synthesise data
+- How it will extract and synthesize data
 - How it will assess the quality of evidence
 
 Protocols serve three essential purposes:
@@ -60,7 +60,7 @@ State where the protocol is registered and provide the registration number (or "
 List all review team members with their roles (lead reviewer, second screener, methodologist, information specialist, domain expert, statistician).
 
 #### 4. Background
-- Summarise the existing evidence on the topic (2-4 paragraphs)
+- Summarize the existing evidence on the topic (2-4 paragraphs)
 - Identify the gap this review will address
 - Explain why a systematic review is the appropriate approach
 - Note any existing reviews and how yours differs
@@ -82,7 +82,7 @@ Secondary objectives (if applicable): "To examine whether effectiveness varies b
 - Study design: [eligible designs]
 - Date range: [with justification for any limits]
 - Language: [with justification for any restrictions]
-- Publication type: [peer-reviewed articles, grey literature, conference abstracts]
+- Publication type: [peer-reviewed articles, gray literature, conference abstracts]
 
 **Exclusion criteria:**
 - [List each exclusion with justification]
@@ -90,7 +90,7 @@ Secondary objectives (if applicable): "To examine whether effectiveness varies b
 #### 7. Information Sources
 List all databases to be searched, including:
 - Database name and platform (e.g., "MEDLINE via Ovid")
-- Grey literature sources (theses repositories, trial registries, organisational websites)
+- Gray literature sources (theses repositories, trial registries, organisational websites)
 - Supplementary search methods (citation chaining, hand-searching key journals, contacting experts)
 
 #### 8. Search Strategy
@@ -131,11 +131,11 @@ Describe the planned synthesis approach:
 - How robustness of the synthesis will be assessed
 
 **Meta-analysis (if planned):**
-- Effect measure(s): risk ratio, odds ratio, mean difference, standardised mean difference
+- Effect measure(s): risk ratio, odds ratio, mean difference, standardized mean difference
 - Model: fixed-effect or random-effects (with justification)
 - Heterogeneity assessment: I-squared, Q statistic, prediction intervals
-- Subgroup analyses (pre-specified)
-- Sensitivity analyses (pre-specified)
+- Subgroup analyzes (pre-specified)
+- Sensitivity analyzes (pre-specified)
 - Meta-regression (if planned)
 - Publication bias assessment: funnel plot, Egger's test (if >= 10 studies)
 
@@ -161,8 +161,8 @@ State that any amendments to the protocol after registration will be documented 
 ### Common Protocol Mistakes
 
 1. **Vague eligibility criteria** — "studies about mindfulness" is not precise enough. Specify the type of mindfulness intervention, the population, and the outcomes.
-2. **No pre-specified synthesis plan** — deciding how to synthesise after seeing the data introduces bias.
-3. **Overlooking grey literature** — systematic reviews should search beyond peer-reviewed databases.
+2. **No pre-specified synthesis plan** — deciding how to synthesize after seeing the data introduces bias.
+3. **Overlooking gray literature** — systematic reviews should search beyond peer-reviewed databases.
 4. **Single-reviewer screening** — this introduces an unacceptable risk of missed studies. Use at least two independent reviewers.
 5. **Not piloting the extraction form** — forms that seem clear on paper often reveal ambiguities when applied to real studies.
 6. **No plan for protocol amendments** — changes will happen. The protocol should state how they will be documented.

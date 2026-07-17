@@ -2,7 +2,7 @@
 type: skill
 id: evidence-synthesis
 title: Evidence Synthesis
-description: "Synthesises extracted evidence from systematic review into a coherent narrative review"
+description: "Synthesizes extracted evidence from systematic review into a coherent narrative review"
 tags: [Production, Tested, Research, Academic]
 connections:
   - target: llm-service
@@ -16,12 +16,12 @@ metadata:
 
 ## Capability
 
-Synthesises evidence extracted from studies included in a systematic review into a coherent, balanced narrative. This skill covers narrative synthesis (for heterogeneous study sets) and can guide the reporting structure for meta-analyses. It organises findings by theme, outcome, population subgroup, or study characteristic, and identifies patterns of agreement, contradiction, and evidence gaps across the included studies.
+Synthesizes evidence extracted from studies included in a systematic review into a coherent, balanced narrative. This skill covers narrative synthesis (for heterogeneous study sets) and can guide the reporting structure for meta-analyses. It organizes findings by theme, outcome, population subgroup, or study characteristic, and identifies patterns of agreement, contradiction, and evidence gaps across the included studies.
 
 ## When to Use
 
 - Writing the results and synthesis sections of a systematic review
-- Organising extracted data into a coherent narrative structure
+- Organizing extracted data into a coherent narrative structure
 - Identifying patterns, contradictions, and gaps across included studies
 - Producing summary of findings tables for systematic reviews
 - Writing the discussion section of a systematic review, contextualising findings within the broader literature
@@ -32,26 +32,26 @@ Synthesises evidence extracted from studies included in a systematic review into
 - Quality/risk of bias assessment results
 - Research questions guiding the synthesis
 - Synthesis approach: narrative synthesis, framework synthesis, thematic synthesis, or meta-analysis reporting
-- Any subgroup analyses or sensitivity analyses to report
+- Any subgroup analyzes or sensitivity analyzes to report
 
 ## Process
 
-1. **Organise the evidence** — group included studies by the most appropriate organising principle:
+1. **Organize the evidence** — group included studies by the most appropriate organizing principle:
    - By research question (if the review addresses multiple questions)
-   - By outcome (if synthesising effects across multiple outcomes)
+   - By outcome (if synthesizing effects across multiple outcomes)
    - By population subgroup (if relevant differences exist between populations)
    - By intervention type or exposure category
    - By theme (for qualitative evidence synthesis)
 
-2. **Describe the evidence base** — for each grouping, summarise:
+2. **Describe the evidence base** — for each grouping, summarize:
    - Number of studies contributing
    - Study designs represented
    - Total sample size across studies
    - Geographic and temporal range
    - Overall quality/risk of bias profile
 
-3. **Synthesise findings** — for each grouping:
-   - Summarise the direction and magnitude of findings across studies
+3. **Synthesize findings** — for each grouping:
+   - Summarize the direction and magnitude of findings across studies
    - Identify consistent findings (most studies agree)
    - Identify contradictory findings (studies disagree) and explore possible explanations: methodological differences, population differences, intervention variations, measurement differences
    - Note where evidence is absent or insufficient to draw conclusions
@@ -71,7 +71,7 @@ Synthesises evidence extracted from studies included in a systematic review into
 
 ## Outputs
 
-- Complete narrative synthesis organised by theme, outcome, or subgroup
+- Complete narrative synthesis organized by theme, outcome, or subgroup
 - Characteristics of included studies table
 - Summary of findings table
 - Risk of bias summary

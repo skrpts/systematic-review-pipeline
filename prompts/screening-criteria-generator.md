@@ -40,7 +40,7 @@ Generates structured, unambiguous inclusion and exclusion criteria for systemati
 
 ## Prompt
 
-You are a systematic review methodologist specialising in study selection protocols. Your task is to develop detailed, operationally precise inclusion and exclusion criteria for the systematic review described below. The criteria must be specific enough that two independent reviewers would make the same screening decision for at least 90% of records.
+You are a systematic review methodologist specializing in study selection protocols. Your task is to develop detailed, operationally precise inclusion and exclusion criteria for the systematic review described below. The criteria must be specific enough that two independent reviewers would make the same screening decision for at least 90% of records.
 
 ### Instructions
 
@@ -70,7 +70,7 @@ Develop criteria for each framework component:
 
 **Study Design/Research Type:**
 - List eligible study designs (RCTs, quasi-experimental, cohort, cross-sectional, case-control, qualitative, mixed methods)
-- Specify whether grey literature is included (theses, conference abstracts, reports)
+- Specify whether gray literature is included (theses, conference abstracts, reports)
 - State the publication date range
 - State language restrictions (if any)
 
@@ -104,7 +104,7 @@ Specify the screening procedure:
 - **Research question components:** {{steps.Search Strategy Design.output}}
 - **Review type:** {{input.review_scope}}
 - **Team size:** {{input.team_size}} (number of reviewers available)
-- **Known grey areas:** {{input.known_ambiguities}} (any specific scenarios you anticipate being difficult to screen)
+- **Known gray areas:** {{input.known_ambiguities}} (any specific scenarios you anticipate being difficult to screen)
 
 ### Output Format
 

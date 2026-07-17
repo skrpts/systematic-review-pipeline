@@ -2,12 +2,12 @@
 type: prompt
 id: evidence-synthesis-writer
 title: Evidence Synthesis Writer
-description: "Synthesises extracted evidence into a structured narrative review"
+description: "Synthesizes extracted evidence into a structured narrative review"
 tags: [Production, Research, Academic]
 inputs:
   synthesis_approach:
     label: "Synthesis Approach"
-    description: "How to synthesise findings across studies"
+    description: "How to synthesize findings across studies"
     example: "Narrative synthesis with thematic grouping"
     required: true
     type: text
@@ -22,7 +22,7 @@ metadata:
 
 ## Purpose
 
-Produces the results and synthesis sections of a systematic review, transforming extracted data into a coherent narrative that organises, summarises, and interprets the evidence base. This prompt generates publication-ready text following PRISMA 2020 reporting guidelines.
+Produces the results and synthesis sections of a systematic review, transforming extracted data into a coherent narrative that organizes, summarizes, and interprets the evidence base. This prompt generates publication-ready text following PRISMA 2020 reporting guidelines.
 
 ## Prompt
 
@@ -35,7 +35,7 @@ Write the synthesis following this structure:
 **1. Study Selection Results**
 - Report the PRISMA flow: records identified, duplicates removed, records screened, full-texts assessed, studies included
 - Reference the PRISMA flow diagram
-- Summarise the main reasons for exclusion at the full-text stage
+- Summarize the main reasons for exclusion at the full-text stage
 
 **2. Characteristics of Included Studies**
 Write a narrative summary of the included studies covering:
@@ -49,7 +49,7 @@ Write a narrative summary of the included studies covering:
 - Reference the characteristics of included studies table
 
 **3. Risk of Bias Assessment**
-Summarise the quality of the evidence:
+Summarize the quality of the evidence:
 - Overall risk of bias profile across studies
 - Most common sources of bias
 - Whether any studies were excluded from synthesis due to critical risk of bias
@@ -67,18 +67,18 @@ For each research question or outcome, provide:
 - Direction and consistency of findings across studies
 
 *4b. Detailed Findings*
-Organise by the most appropriate structure:
+Organize by the most appropriate structure:
 - By outcome: for reviews with multiple outcomes
 - By intervention/exposure type: for reviews comparing different approaches
 - By population subgroup: for reviews where effects differ by group
 - By theme: for qualitative evidence synthesis
 
 For each grouping:
-- Summarise the findings across studies, noting effect directions, magnitudes, and statistical significance where reported
+- Summarize the findings across studies, noting effect directions, magnitudes, and statistical significance where reported
 - Identify consistent findings (agreement across studies)
 - Identify contradictory findings and explore possible explanations (methodological differences, population differences, measurement differences)
 - Note where evidence is insufficient to draw conclusions
-- Weight findings by study quality — emphasise results from studies with lower risk of bias
+- Weight findings by study quality — emphasize results from studies with lower risk of bias
 
 *4c. Certainty of Evidence*
 Apply GRADE (or equivalent) to rate the overall certainty of evidence for each key finding:
