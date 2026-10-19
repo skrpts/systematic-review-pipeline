@@ -186,7 +186,7 @@ Invoke the **evidence-synthesis** skill via the **evidence-synthesis-writer** pr
 
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
-| `{{input.draft_research_question}}` | Yes | Draft research question to refine for the systematic review | `What is the effectiveness of mindfulness interventions for reducing anxiety in university students?` |
+| `{{input.research_question}}` | Yes | The specific research question to address | `How does sleep duration affect cognitive performance in university students?` |
 | `{{input.field_of_study}}` | Yes | Academic field or discipline | `Clinical Psychology` |
 | `{{input.review_scope}}` | Yes | Type of review (systematic review, meta-analysis, scoping review) | `Systematic review` |
 | `{{input.target_databases}}` | No | Databases to search | `PubMed, Scopus, PsycINFO, Web of Science` |
