@@ -5,6 +5,8 @@ title: Systematic Review Pipeline
 description: "End-to-end systematic literature review following PRISMA 2020 methodology"
 tags: [Production, Tested, Academic, Research]
 connections:
+  - target: research-question-refinement
+    type: uses
   - target: search-strategy-design
     type: uses
   - target: study-screening
@@ -25,8 +27,10 @@ connections:
     type: references
   - target: prisma-flow-template
     type: uses
-  - target: data-extraction-template
+  - target: data-extraction-design
     type: uses
+  - target: data-extraction-template
+    type: references
   - target: evidence-claim-check
     type: uses
 metadata:
@@ -34,16 +38,21 @@ metadata:
   trigger: manual
 output_step: "language-polish"
 composite_steps:
+  - "research-question-refinement"
   - "search-strategy-design"
   - "study-screening"
   - "evidence-synthesis"
   - "source-summarisation"
   - "prisma-flow-template"
-  - "data-extraction-template"
+  - "data-extraction-design"
   - "evidence-claim-check"
   - "consistency-check"
   - "language-polish"
 execution:
+  - skill: "research-question-refinement"
+    prompt: "research-question-refiner"
+    step_type: "generation"
+    output: { name: "refined_question", type: "text" }
   - skill: "search-strategy-design"
     step_type: "generation"
     prompt: "search-string-builder"
@@ -63,7 +72,7 @@ execution:
   - id: "prisma-flow-template"
     step_type: "local.template"
     output: { name: "prisma_flow", type: "text" }
-  - id: "data-extraction-template"
+  - skill: "data-extraction-design"
     prompt: "data-extraction-form-builder"
     step_type: "generation"
     output: { name: "extraction_form", type: "text" }
@@ -115,7 +124,7 @@ Before starting this pipeline:
 
 **Input:** Draft research question, field of study, review scope
 
-Invoke the **search-strategy-design** skill via the **research-question-refiner** prompt. Refine the research question using the PICO framework (Population, Intervention, Comparator, Outcome) for quantitative reviews or the SPIDER framework (Sample, Phenomenon of Interest, Design, Evaluation, Research type) for qualitative/mixed-methods reviews.
+Invoke the **research-question-refinement** skill via the **research-question-refiner** prompt. Refine the research question using the PICO framework (Population, Intervention, Comparator, Outcome) for quantitative reviews or the SPIDER framework (Sample, Phenomenon of Interest, Design, Evaluation, Research type) for qualitative/mixed-methods reviews.
 
 **Output:** Refined research question with structured components, review objectives, and scope definition.
 
@@ -157,7 +166,7 @@ Invoke the **study-screening** skill via the **screening-criteria-generator** pr
 
 **Input:** Full texts of included studies, research questions, data extraction form
 
-Invoke the **study-screening** skill via the **data-extraction-form-builder** prompt. Design a structured data extraction form tailored to the review's research questions. Then extract data from each included study.
+Invoke the **data-extraction-design** skill via the **data-extraction-form-builder** prompt. Design a structured data extraction form tailored to the review's research questions. Then extract data from each included study.
 
 **Output:** Completed data extraction forms for all included studies, populated **data-extraction-template**.
 

@@ -1,5 +1,46 @@
 # Release Notes
 
+## v1.1.31
+GH#1045 — Stage 1 of this pipeline never ran. It does now, and the stage after it was reading from nothing.
+
+"Research Question Refinement" is the first numbered stage in this workflow's own documentation, with a
+stated input, output and checkpoint — and no execution entry invoked the `research-question-refiner`
+prompt, so the stage never ran. It is now backed by a new **Research Question Refinement** skill and
+runs first, where the documentation places it.
+
+**This also repairs the stage after it.** The search-strategy step reads `{{steps.previous.output}}`,
+and it was the first step in the pipeline — so "previous" referred to nothing and the search strategy
+was built without the refined question it is supposed to follow from. With refinement ahead of it,
+that reference resolves to the refined research question.
+
+The documentation is corrected in the same version. It told authors to invoke this prompt "via the
+search-strategy-design skill" — that skill already runs the search-strategy stage, and a second entry
+on one skill is refused at validation, so the instruction could not have been followed.
+
+Also corrected: the declared contents total was 13 where the package contains 14 items, an error
+introduced in v1.1.30 and never served, since that version did not publish. With this version's new
+skill the total is 15.
+
+Skills 4 → 5, total 13 (incorrect) → 15.
+
+## v1.1.30
+GH#1214 — the data-extraction stage never ran. It does now.
+
+The stage was declared with `id: "data-extraction-template"`, pointing at a template. A template is
+an asset, and only a skill or a prompt can back an executable step, so the entry matched no planner
+branch and was dropped silently — no error, no warning. The stage appeared in the pipeline and
+produced nothing.
+
+It is now backed by a new **Data Extraction Design** skill, which is what the stage does: derive the
+extraction fields from the review's research questions, then apply them per included study. The
+extraction template remains declared as reference material.
+
+The documentation is corrected in the same version. It told authors to invoke this prompt "via the
+study-screening skill" — that skill already runs the screening stage, and a second entry on one
+skill is refused at validation, so the instruction could not have been followed.
+
+Skills 3 → 4, total 13 → 14.
+
 ## v1.1.29
 GH#1044 — document the inputs this workflow's prompts REQUIRE but its Inputs table never listed. A user supplying exactly what the table asked for was running with required parameters unsatisfied — a silent wrong run, not a documentation nicety. Renamed 1 row(s) to the name the prompt actually consumes; documented 1 input(s): research_question. Every row is generated from the requiring prompt's own declared description, example and required flag — none invented. No behaviour change; documentation only.
 
